@@ -1,0 +1,179 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   23 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_Subsystem"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_AlarmManagement"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "AlarmManagement"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_AlarmManagement"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "AlarmManagement"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_TimeCount"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TimeCount"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_TimeCount"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "TimeCount"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_TimeCountStopWatch"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TimeCountStopWatch"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_TimeCountStopWatch"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "TimeCountStopWatch"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_interface"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "interface"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_interface"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "interface"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_TimeSetting"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "interface.TimeSetting"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Alarm"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "interface.Alarm"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_StopWatch"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "interface.StopWatch"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Ahours"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Ahours"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Aminutes"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Aminutes"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "hours"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "hours"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "seconds"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "seconds"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "tenths"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "tenths"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Shours"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Shours"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Sminutes"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Sminutes"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Stenths"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Stenths"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Sseconds"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Sseconds"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "minutes"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "minutes"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
