@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Swatch'.
  *
- * Model version                  : 1.27
+ * Model version                  : 1.25
  * Simulink Coder version         : 9.1 (R2019a) 23-Nov-2018
- * C/C++ source code generated on : Sat Sep  7 16:37:39 2019
+ * C/C++ source code generated on : Thu Aug 22 17:37:15 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Custom Processor->Custom Processor
@@ -27,7 +27,6 @@
 #endif                                 /* Swatch_COMMON_INCLUDES_ */
 
 #include "Swatch_types.h"
-#include "rt_defines.h"
 
 /* Macros for accessing real-time model data structure */
 #ifndef rtmGetPrevZCSigState
@@ -57,6 +56,7 @@
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
   int32_T sfEvent;                     /* '<S1>/StopWatch2018' */
+  uint8_T Output_DSTATE;               /* '<S2>/Output' */
   uint8_T is_active_c3_Swatch;         /* '<S1>/StopWatch2018' */
   uint8_T is_AlarmManagement;          /* '<S1>/StopWatch2018' */
   uint8_T is_active_AlarmManagement;   /* '<S1>/StopWatch2018' */
@@ -95,18 +95,15 @@ struct tag_RTM_Swatch_T {
 
 /* Model entry point functions */
 extern void Swatch_initialize(RT_MODEL_Swatch_T *const Swatch_M, boolean_T
-  *Swatch_U_Tick, boolean_T *Swatch_U_plusbutton, boolean_T
-  *Swatch_U_minusbutton, boolean_T *Swatch_U_timemode, boolean_T
-  *Swatch_U_timesetmode, boolean_T *Swatch_U_alarmmode, boolean_T
-  *Swatch_U_swatchmode, uint8_T *Swatch_Y_hours, uint8_T *Swatch_Y_minutes,
-  uint8_T *Swatch_Y_seconds, uint8_T *Swatch_Y_tenths, uint8_T *Swatch_Y_mode);
+  *Swatch_U_Bplus, boolean_T *Swatch_U_Bminus, boolean_T *Swatch_U_Btime,
+  boolean_T *Swatch_U_Btimeset, boolean_T *Swatch_U_Balarm, boolean_T
+  *Swatch_U_Bswatch, uint8_T *Swatch_Y_hours, uint8_T *Swatch_Y_minutes, uint8_T
+  *Swatch_Y_seconds, uint8_T *Swatch_Y_tenths, uint8_T *Swatch_Y_mode);
 extern void Swatch_step(RT_MODEL_Swatch_T *const Swatch_M, boolean_T
-  Swatch_U_Tick, boolean_T Swatch_U_plusbutton, boolean_T Swatch_U_minusbutton,
-  boolean_T Swatch_U_timemode, boolean_T Swatch_U_timesetmode, boolean_T
-  Swatch_U_alarmmode, boolean_T Swatch_U_swatchmode, uint8_T *Swatch_Y_hours,
-  uint8_T *Swatch_Y_minutes, uint8_T *Swatch_Y_seconds, uint8_T *Swatch_Y_tenths,
-  uint8_T *Swatch_Y_mode);
-extern void Swatch_terminate(RT_MODEL_Swatch_T *const Swatch_M);
+  Swatch_U_Bplus, boolean_T Swatch_U_Bminus, boolean_T Swatch_U_Btime, boolean_T
+  Swatch_U_Btimeset, boolean_T Swatch_U_Balarm, boolean_T Swatch_U_Bswatch,
+  uint8_T *Swatch_Y_hours, uint8_T *Swatch_Y_minutes, uint8_T *Swatch_Y_seconds,
+  uint8_T *Swatch_Y_tenths, uint8_T *Swatch_Y_mode);
 
 /*-
  * The generated code includes comments that allow you to trace directly
@@ -120,14 +117,17 @@ extern void Swatch_terminate(RT_MODEL_Swatch_T *const Swatch_M);
  * MATLAB hilite_system command to trace the generated code back
  * to the parent model.  For example,
  *
- * hilite_system('Stop_Generated/Swatch')    - opens subsystem Stop_Generated/Swatch
- * hilite_system('Stop_Generated/Swatch/Kp') - opens and selects block Kp
+ * hilite_system('Stop_Generated/Swatch  ')    - opens subsystem Stop_Generated/Swatch
+ * hilite_system('Stop_Generated/Swatch  /Kp') - opens and selects block Kp
  *
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'Stop_Generated'
- * '<S1>'   : 'Stop_Generated/Swatch'
- * '<S2>'   : 'Stop_Generated/Swatch/StopWatch2018'
+ * '<S1>'   : 'Stop_Generated/Swatch  '
+ * '<S2>'   : 'Stop_Generated/Swatch  /Counter Limited'
+ * '<S3>'   : 'Stop_Generated/Swatch  /StopWatch2018'
+ * '<S4>'   : 'Stop_Generated/Swatch  /Counter Limited/Increment Real World'
+ * '<S5>'   : 'Stop_Generated/Swatch  /Counter Limited/Wrap To Zero'
  */
 #endif                                 /* RTW_HEADER_Swatch_h_ */
 

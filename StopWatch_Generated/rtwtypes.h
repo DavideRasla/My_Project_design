@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Swatch'.
  *
- * Model version                  : 1.27
+ * Model version                  : 1.25
  * Simulink Coder version         : 9.1 (R2019a) 23-Nov-2018
- * C/C++ source code generated on : Sat Sep  7 16:37:39 2019
+ * C/C++ source code generated on : Thu Aug 22 17:37:15 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Custom Processor->Custom Processor
@@ -65,7 +65,8 @@ typedef unsigned long ulong_T;
 typedef char char_T;
 typedef unsigned char uchar_T;
 typedef char_T byte_T;
-
+/* Previous state of a trigger signal */
+typedef uint8_T ZCSigState;
 /*=======================================================================*
  * Min and Max:                                                          *
  *   int8_T, int16_T, int32_T     - signed 8, 16, or 32 bit integers     *

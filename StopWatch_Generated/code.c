@@ -60,7 +60,7 @@
 //D_Work_SW_wrapper Dstate;
 //PrevZCSigStates_SW_wrapper Sigstate;
 
-//Davide: need to insert this because Swatch.h declares this external
+//Matteo: need to insert this because Swatch.h declares this external
 const char *RT_MEMORY_ALLOCATION_ERROR;
 
 RT_MODEL_Swatch_T *Swatch_M;
@@ -71,7 +71,7 @@ boolean_T timeMode;
 boolean_T timesetmode;
 boolean_T alarmMode;
 boolean_T swatchMode;
-boolean_T 	tick;
+
 /*
  * SysTick ISR2
  */
@@ -192,13 +192,9 @@ TASK(TaskClock)
 	if(IsEvent(MINUS)) minusButton = 1;
 	else minusButton = 0;
 
-	if(tick == false)
-		tick = true;
-	else
-		tick = false;
 //	debuginfo(6, button[0], button[2], button[3]);
 
-	Swatch_step(Swatch_M, tick, plusButton, minusButton, timeMode, timesetmode,
+	Swatch_step(Swatch_M, plusButton, minusButton, timeMode, timesetmode,
 			alarmMode, swatchMode, &hours, &minutes, &seconds, &tenths, &mode);
 	/* seconds = seconds+1; */
 
@@ -256,9 +252,12 @@ int main(void)
 	EE_system_init();
 
   /* init state machine */
+	Swatch_M = Swatch(
+		  &plusButton, &minusButton, &timeMode,
+		  &timesetmode, &alarmMode, &swatchMode,
+		  &hours, &minutes, &seconds, &tenths, &mode);
 
-
-	Swatch_initialize(Swatch_M,&tick,
+	Swatch_initialize(Swatch_M,
 	  &plusButton, &minusButton, &timeMode,
 	  &timesetmode, &alarmMode, &swatchMode,
 	  &hours, &minutes, &seconds, &tenths, &mode);
@@ -293,7 +292,7 @@ int main(void)
 	 * and after that periodically
 	 * */
 	SetRelAlarm(AlarmTaskLCD, 10, 50);
-	SetRelAlarm(AlarmTaskClock, 10, 1000);
+	SetRelAlarm(AlarmTaskClock, 10, 100);
 
   /* Forever loop: background activities (if any) should go here */
 	for (;;) {

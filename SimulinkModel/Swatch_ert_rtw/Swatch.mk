@@ -2,7 +2,7 @@
 ## Makefile generated for Simulink model 'Swatch'. 
 ## 
 ## Makefile     : Swatch.mk
-## Generated on : Sat Sep 07 16:37:46 2019
+## Generated on : Thu Aug 22 17:37:21 2019
 ## MATLAB Coder version: 4.2 (R2019a)
 ## 
 ## Build Info:
@@ -30,7 +30,7 @@ MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2019a
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2019a/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
 MASTER_ANCHOR_DIR         = 
-START_DIR                 = C:/Users/david/Desktop/RaslaDavide_ProgettoDesign/SimulinkModel
+START_DIR                 = E:/Dati/Drive/Università/Magistrale/Design(di Natale)/Progetti/StopWatch_Mio/StopWatch - Generated/SimulinkModel
 ARCH                      = win64
 SOLVER                    = 
 SOLVER_OBJ                = 
@@ -154,7 +154,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=1 -DMT=0
+DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=0 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=1 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_IMPLIED = -DTID01EQ=0
 DEFINES_STANDARD = -DMODEL=Swatch -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
