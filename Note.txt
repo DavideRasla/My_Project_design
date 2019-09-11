@@ -1,3 +1,4 @@
 Versione generata: Compila, da provare sulla board
 Modello simulink: Aggiustato, da far vedere al professore
 Handcoded: TODO
+Progetto: Perfetto
