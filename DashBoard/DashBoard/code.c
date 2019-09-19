@@ -35,10 +35,10 @@ double    Actual_Accel 			= ZERO;												// Actual accelleration readed by t
 uint32_T  MetersTraveled 		= ZERO;												// Meters traveled since the Power On
 uint8_T	  KmTraveled 			= ZERO;												// KM traveled since the Power On
 bool_t 	  StopEngine 			= ZERO; 											// If equals to zero the engine can work, otherwise the engine has a problem or the motorbike is without fuel
-bool_t Blink_Left 				= ZERO;												// If equals to one the left arrow can blink
-bool_t Blink_Right				= ZERO;												// If equals to one the right arrow can blink
-uint8_T time_Arrow 				= ZERO;												// Used to count the time in order to simulate the blinking of the arrow
-bool_t Brights_Status 			= ZERO;												// Used to store the status of the brights
+bool_t	  Blink_Left 			= ZERO;												// If equals to one the left arrow can blink
+bool_t 	  Blink_Right			= ZERO;												// If equals to one the right arrow can blink
+uint8_T   time_Arrow 			= ZERO;												// Used to count the time in order to simulate the blinking of the arrow
+bool_t    Brights_Status 		= ZERO;												// Used to store the status of the brights
 
 /*Events variables: When the task ReadSensor reads a valid input they are set to one */
 

@@ -55,9 +55,10 @@ static uint8_T Average  = ZERO;
 	Speed2 = InstantSpeed;
 	Average = (Speed1 + Speed2)/2;
 	MetersTraveled = MetersTraveled +  2*Average/3.6;//From km/h to m/s. Calculate for 2 seconds
+	Partial_Speedometer = Partial_Speedometer +  2*Average/3.6; 
+
 	if(MetersTraveled > ONE_KM){
 		Speedometer++;
-		Partial_Speedometer++;
 		KmTraveled++;
 		MetersTraveled = MetersTraveled % ONE_KM; //Save just the meters
 
@@ -73,12 +74,12 @@ static uint8_T Average  = ZERO;
 	}
 	i++;
 
-	if( Partial_Speedometer>Oil_MustBe_Refilled ){//if there is not a refill before X km, the engine can work but the oil icon is on
+	if( KmTraveled>Oil_MustBe_Refilled ){//if there is not a refill before X km, the engine can work but the oil icon is on
 		SetEvent(iconinfo(&MyDashBoardScr[3])->onevent);
 	}else{
 		ClearEvent(iconinfo(&MyDashBoardScr[3])->onevent);
 	}
-	if(Partial_Speedometer> Oil_MustBe_Refilled + Km_Before_Crash ){ //if there is not a a refill at all the engine melts 
+	if(KmTraveled> Oil_MustBe_Refilled + Km_Before_Crash ){ //if there is not a a refill at all the engine melts 
 		StopEngine = ONE;
 	}
 }
@@ -223,6 +224,7 @@ void checkEvents(){
 	}
 	if(Event_PartialKm_Reset && StopEngine == ZERO){//Reset the partial km
 		Event_PartialKm_Reset = ZERO;
+		KmTraveled = ZERO;
 		Partial_Speedometer = ZERO;
 	}
 //debug(evts);//DAVIDE: USEFUL in order to print the events

@@ -29,7 +29,7 @@ extern "C" {
 }
 #endif
 
-extern const unsigned char ImageBuffer[2097152];
+extern const unsigned char ImageBuffer[153654];
 extern const unsigned char icontime_on[3340];
 extern const unsigned char icontime_off[3340];
 extern const unsigned char icontimeset_on[3340];

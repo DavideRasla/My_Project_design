@@ -29,12 +29,12 @@ unsigned char DrawInit( const Widget ws[])
 /*Draw the string "km" in order to avoid useless refreshing*/
 	LCD_SetTextColor(Black);
 	LCD_SetBackColor(Black);
-	LCD_DrawFullRect(50, 200, 280, 30);
+	LCD_DrawFullRect(50, 200, 180, 30);
 	LCD_DrawFullRect(100, 20, 100, 30);
 	LCD_SetTextColor(White);
-    LCD_DisplayStringXY(210, 210, "Km");
-    LCD_DisplayStringXY(40, 210, "Km");
-    LCD_DisplayStringXY(150, 100, "Km");
+    LCD_DisplayStringXY(180, 210, "Km");
+    LCD_DisplayStringXY(65, 180, "Km");
+    LCD_DisplayStringXY(140, 100, "Km");
 
  /*Draw the clock for the first time*/
  uint8_t hours=Initial_Hours, minutes=Initial_Minutes, seconds=Initial_Seconds;

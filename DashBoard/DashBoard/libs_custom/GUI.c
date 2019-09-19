@@ -111,12 +111,12 @@ void UpdateSpeedoMeter(){
 char text[20];
 	LCD_SetTextColor(Black);
 	LCD_SetBackColor(Black);
-	LCD_DrawFullRect(110, 200, 100, 30);
-	LCD_DrawFullRect(20, 200, 15, 30);
+	LCD_DrawFullRect(70, 200, 105, 30);
+	LCD_DrawFullRect(15, 180, 47, 30);
 	LCD_SetTextColor(White);
    	sprintf((char*)text,"%d", Speedometer);
-    LCD_DisplayStringXY(110, 210, text);
-    sprintf((char*)text,"%d", Partial_Speedometer);
-    LCD_DisplayStringXY(20, 210, text);
+    LCD_DisplayStringXY(70, 210, text);
+    sprintf((char*)text,"%.1f",(double)Partial_Speedometer/1000);
+    LCD_DisplayStringXY(15, 180, text);
 }
 

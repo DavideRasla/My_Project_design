@@ -1502,7 +1502,7 @@ OUTPUT(c_mX.elf elf32-littlearm)
  .comment       0x00000000       0x71 libstm32f4xxspd.a(stm32f4xx_i2c.o)
  .comment       0x00000000       0x71 libstm32f4xxspd.a(stm32f4xx_rcc.o)
 
-.debug_info     0x00000000     0xb865
+.debug_info     0x00000000     0xb913
  .debug_info    0x00000000       0x3d obj/Event.o
  .debug_info    0x0000003d      0xd4f obj/STMPE811QTR.o
  .debug_info    0x00000d8c      0x827 obj/Swatch.o
@@ -1513,28 +1513,28 @@ OUTPUT(c_mX.elf elf32-littlearm)
  .debug_info    0x00003e20      0x18a obj/debug.o
  .debug_info    0x00003faa      0x561 obj/eecfg.o
  .debug_info    0x0000450b      0x164 obj/pictures.o
- .debug_info    0x0000466f       0xc2 obj/pkg/mcu/st_stm32_stm32f4xx/src/startup_stm32f4xx_gnu.o
- .debug_info    0x00004731      0x592 obj/pkg/mcu/st_stm32_stm32f4xx/src/system_stm32f4xx.o
- .debug_info    0x00004cc3      0x38b libee.a(ee_hal_structs.o)
- .debug_info    0x0000504e      0x462 libee.a(ee_utils.o)
- .debug_info    0x000054b0       0xc1 libee.a(ee_gnu_change_context_isr.o)
- .debug_info    0x00005571      0x52b libee.a(ee_irqendin.o)
- .debug_info    0x00005a9c      0x438 libee.a(ee_tstub.o)
- .debug_info    0x00005ed4      0x38b libee.a(ee_lookup.o)
- .debug_info    0x0000625f      0x3a7 libee.a(ee_rq_exchg.o)
- .debug_info    0x00006606      0x57d libee.a(ee_alsetrel.o)
- .debug_info    0x00006b83      0x99f libee.a(ee_altick.o)
- .debug_info    0x00007522      0x3a3 libee.a(ee_context.o)
- .debug_info    0x000078c5       0xb1 libee.a(ee_gnu_oo.o)
- .debug_info    0x00007976      0x3f2 libee.a(ee_tnterm.o)
- .debug_info    0x00007d68      0x3c7 libee.a(ee_rq_inser.o)
- .debug_info    0x0000812f      0x40d libee.a(ee_context.o)
- .debug_info    0x0000853c      0x5b5 libee.a(ee_thendin.o)
- .debug_info    0x00008af1      0x739 libstm32f4xxspd.a(stm32f4xx_dma.o)
- .debug_info    0x0000922a      0x8f5 libstm32f4xxspd.a(stm32f4xx_fsmc.o)
- .debug_info    0x00009b1f      0x605 libstm32f4xxspd.a(stm32f4xx_gpio.o)
- .debug_info    0x0000a124      0xaf4 libstm32f4xxspd.a(stm32f4xx_i2c.o)
- .debug_info    0x0000ac18      0xc4d libstm32f4xxspd.a(stm32f4xx_rcc.o)
+ .debug_info    0x0000466f       0xfc obj/pkg/mcu/st_stm32_stm32f4xx/src/startup_stm32f4xx_gnu.o
+ .debug_info    0x0000476b      0x592 obj/pkg/mcu/st_stm32_stm32f4xx/src/system_stm32f4xx.o
+ .debug_info    0x00004cfd      0x38b libee.a(ee_hal_structs.o)
+ .debug_info    0x00005088      0x462 libee.a(ee_utils.o)
+ .debug_info    0x000054ea       0xfb libee.a(ee_gnu_change_context_isr.o)
+ .debug_info    0x000055e5      0x52b libee.a(ee_irqendin.o)
+ .debug_info    0x00005b10      0x438 libee.a(ee_tstub.o)
+ .debug_info    0x00005f48      0x38b libee.a(ee_lookup.o)
+ .debug_info    0x000062d3      0x3a7 libee.a(ee_rq_exchg.o)
+ .debug_info    0x0000667a      0x57d libee.a(ee_alsetrel.o)
+ .debug_info    0x00006bf7      0x99f libee.a(ee_altick.o)
+ .debug_info    0x00007596      0x3a3 libee.a(ee_context.o)
+ .debug_info    0x00007939       0xeb libee.a(ee_gnu_oo.o)
+ .debug_info    0x00007a24      0x3f2 libee.a(ee_tnterm.o)
+ .debug_info    0x00007e16      0x3c7 libee.a(ee_rq_inser.o)
+ .debug_info    0x000081dd      0x40d libee.a(ee_context.o)
+ .debug_info    0x000085ea      0x5b5 libee.a(ee_thendin.o)
+ .debug_info    0x00008b9f      0x739 libstm32f4xxspd.a(stm32f4xx_dma.o)
+ .debug_info    0x000092d8      0x8f5 libstm32f4xxspd.a(stm32f4xx_fsmc.o)
+ .debug_info    0x00009bcd      0x605 libstm32f4xxspd.a(stm32f4xx_gpio.o)
+ .debug_info    0x0000a1d2      0xaf4 libstm32f4xxspd.a(stm32f4xx_i2c.o)
+ .debug_info    0x0000acc6      0xc4d libstm32f4xxspd.a(stm32f4xx_rcc.o)
 
 .debug_abbrev   0x00000000     0x2bdc
  .debug_abbrev  0x00000000       0x37 obj/Event.o
@@ -1636,97 +1636,97 @@ OUTPUT(c_mX.elf elf32-littlearm)
  .debug_aranges
                 0x000003d8       0x20 libstm32f4xxspd.a(stm32f4xx_rcc.o)
 
-.debug_line     0x00000000     0x529d
- .debug_line    0x00000000       0x51 obj/Event.o
- .debug_line    0x00000051      0x50a obj/STMPE811QTR.o
- .debug_line    0x0000055b      0x3bd obj/Swatch.o
- .debug_line    0x00000918      0x214 obj/Touch.o
- .debug_line    0x00000b2c      0x785 obj/Widget.o
- .debug_line    0x000012b1      0x17f obj/WidgetConfig.o
- .debug_line    0x00001430      0x4fc obj/code.o
- .debug_line    0x0000192c      0x165 obj/debug.o
- .debug_line    0x00001a91      0x1a1 obj/eecfg.o
- .debug_line    0x00001c32       0x49 obj/pictures.o
- .debug_line    0x00001c7b       0xe8 obj/pkg/mcu/st_stm32_stm32f4xx/src/startup_stm32f4xx_gnu.o
- .debug_line    0x00001d63      0x27b obj/pkg/mcu/st_stm32_stm32f4xx/src/system_stm32f4xx.o
- .debug_line    0x00001fde      0x1dd libee.a(ee_hal_structs.o)
- .debug_line    0x000021bb      0x21f libee.a(ee_utils.o)
- .debug_line    0x000023da       0xf0 libee.a(ee_gnu_change_context_isr.o)
- .debug_line    0x000024ca      0x264 libee.a(ee_irqendin.o)
- .debug_line    0x0000272e      0x221 libee.a(ee_tstub.o)
- .debug_line    0x0000294f      0x1fa libee.a(ee_lookup.o)
- .debug_line    0x00002b49      0x208 libee.a(ee_rq_exchg.o)
- .debug_line    0x00002d51      0x2da libee.a(ee_alsetrel.o)
- .debug_line    0x0000302b      0x3a5 libee.a(ee_altick.o)
- .debug_line    0x000033d0      0x210 libee.a(ee_context.o)
- .debug_line    0x000035e0       0xd2 libee.a(ee_gnu_oo.o)
- .debug_line    0x000036b2      0x228 libee.a(ee_tnterm.o)
- .debug_line    0x000038da      0x219 libee.a(ee_rq_inser.o)
- .debug_line    0x00003af3      0x21c libee.a(ee_context.o)
- .debug_line    0x00003d0f      0x27a libee.a(ee_thendin.o)
- .debug_line    0x00003f89      0x3aa libstm32f4xxspd.a(stm32f4xx_dma.o)
- .debug_line    0x00004333      0x41d libstm32f4xxspd.a(stm32f4xx_fsmc.o)
- .debug_line    0x00004750      0x345 libstm32f4xxspd.a(stm32f4xx_gpio.o)
- .debug_line    0x00004a95      0x3e9 libstm32f4xxspd.a(stm32f4xx_i2c.o)
- .debug_line    0x00004e7e      0x41f libstm32f4xxspd.a(stm32f4xx_rcc.o)
+.debug_line     0x00000000     0x54a7
+ .debug_line    0x00000000       0x8b obj/Event.o
+ .debug_line    0x0000008b      0x544 obj/STMPE811QTR.o
+ .debug_line    0x000005cf      0x3f7 obj/Swatch.o
+ .debug_line    0x000009c6      0x24e obj/Touch.o
+ .debug_line    0x00000c14      0x7bf obj/Widget.o
+ .debug_line    0x000013d3      0x1b9 obj/WidgetConfig.o
+ .debug_line    0x0000158c      0x536 obj/code.o
+ .debug_line    0x00001ac2      0x19f obj/debug.o
+ .debug_line    0x00001c61      0x1a1 obj/eecfg.o
+ .debug_line    0x00001e02       0x83 obj/pictures.o
+ .debug_line    0x00001e85       0xe8 obj/pkg/mcu/st_stm32_stm32f4xx/src/startup_stm32f4xx_gnu.o
+ .debug_line    0x00001f6d      0x27b obj/pkg/mcu/st_stm32_stm32f4xx/src/system_stm32f4xx.o
+ .debug_line    0x000021e8      0x1dd libee.a(ee_hal_structs.o)
+ .debug_line    0x000023c5      0x21f libee.a(ee_utils.o)
+ .debug_line    0x000025e4       0xf0 libee.a(ee_gnu_change_context_isr.o)
+ .debug_line    0x000026d4      0x264 libee.a(ee_irqendin.o)
+ .debug_line    0x00002938      0x221 libee.a(ee_tstub.o)
+ .debug_line    0x00002b59      0x1fa libee.a(ee_lookup.o)
+ .debug_line    0x00002d53      0x208 libee.a(ee_rq_exchg.o)
+ .debug_line    0x00002f5b      0x2da libee.a(ee_alsetrel.o)
+ .debug_line    0x00003235      0x3a5 libee.a(ee_altick.o)
+ .debug_line    0x000035da      0x210 libee.a(ee_context.o)
+ .debug_line    0x000037ea       0xd2 libee.a(ee_gnu_oo.o)
+ .debug_line    0x000038bc      0x228 libee.a(ee_tnterm.o)
+ .debug_line    0x00003ae4      0x219 libee.a(ee_rq_inser.o)
+ .debug_line    0x00003cfd      0x21c libee.a(ee_context.o)
+ .debug_line    0x00003f19      0x27a libee.a(ee_thendin.o)
+ .debug_line    0x00004193      0x3aa libstm32f4xxspd.a(stm32f4xx_dma.o)
+ .debug_line    0x0000453d      0x41d libstm32f4xxspd.a(stm32f4xx_fsmc.o)
+ .debug_line    0x0000495a      0x345 libstm32f4xxspd.a(stm32f4xx_gpio.o)
+ .debug_line    0x00004c9f      0x3e9 libstm32f4xxspd.a(stm32f4xx_i2c.o)
+ .debug_line    0x00005088      0x41f libstm32f4xxspd.a(stm32f4xx_rcc.o)
 
-.debug_str      0x00000000     0x3c8d
- .debug_str     0x00000000       0xbd obj/Event.o
- .debug_str     0x000000bd      0x786 obj/STMPE811QTR.o
-                                0x897 (size before relaxing)
- .debug_str     0x00000843      0x456 obj/Swatch.o
-                                0x598 (size before relaxing)
- .debug_str     0x00000c99      0x110 obj/Touch.o
-                                0x2bc (size before relaxing)
- .debug_str     0x00000da9      0x839 obj/Widget.o
-                                0xbde (size before relaxing)
- .debug_str     0x000015e2      0x103 obj/WidgetConfig.o
-                                0x31f (size before relaxing)
- .debug_str     0x000016e5      0x2fb obj/code.o
-                                0x740 (size before relaxing)
- .debug_str     0x000019e0       0x30 obj/debug.o
-                                0x1cd (size before relaxing)
- .debug_str     0x00001a10      0x346 obj/eecfg.o
-                                0x53b (size before relaxing)
- .debug_str     0x00001d56       0x34 obj/pictures.o
-                                0x144 (size before relaxing)
- .debug_str     0x00001d8a      0x203 obj/pkg/mcu/st_stm32_stm32f4xx/src/system_stm32f4xx.o
+.debug_str      0x00000000     0x3ed1
+ .debug_str     0x00000000       0xf7 obj/Event.o
+ .debug_str     0x000000f7      0x7c0 obj/STMPE811QTR.o
+                                0x8d1 (size before relaxing)
+ .debug_str     0x000008b7      0x4ca obj/Swatch.o
+                                0x60c (size before relaxing)
+ .debug_str     0x00000d81      0x14a obj/Touch.o
+                                0x330 (size before relaxing)
+ .debug_str     0x00000ecb      0x873 obj/Widget.o
+                                0xc18 (size before relaxing)
+ .debug_str     0x0000173e      0x13d obj/WidgetConfig.o
+                                0x393 (size before relaxing)
+ .debug_str     0x0000187b      0x335 obj/code.o
+                                0x7b4 (size before relaxing)
+ .debug_str     0x00001bb0       0x6a obj/debug.o
+                                0x241 (size before relaxing)
+ .debug_str     0x00001c1a      0x346 obj/eecfg.o
+                                0x575 (size before relaxing)
+ .debug_str     0x00001f60       0x6e obj/pictures.o
+                                0x17e (size before relaxing)
+ .debug_str     0x00001fce      0x203 obj/pkg/mcu/st_stm32_stm32f4xx/src/system_stm32f4xx.o
                                 0x3da (size before relaxing)
- .debug_str     0x00001f8d       0x67 libee.a(ee_hal_structs.o)
+ .debug_str     0x000021d1       0x67 libee.a(ee_hal_structs.o)
                                 0x40e (size before relaxing)
- .debug_str     0x00001ff4       0xd1 libee.a(ee_utils.o)
+ .debug_str     0x00002238       0xd1 libee.a(ee_utils.o)
                                 0x478 (size before relaxing)
- .debug_str     0x000020c5      0x262 libee.a(ee_irqendin.o)
+ .debug_str     0x00002309      0x262 libee.a(ee_irqendin.o)
                                 0x609 (size before relaxing)
- .debug_str     0x00002327       0x8e libee.a(ee_tstub.o)
+ .debug_str     0x0000256b       0x8e libee.a(ee_tstub.o)
                                 0x539 (size before relaxing)
- .debug_str     0x000023b5       0x61 libee.a(ee_lookup.o)
+ .debug_str     0x000025f9       0x61 libee.a(ee_lookup.o)
                                 0x408 (size before relaxing)
- .debug_str     0x00002416       0x76 libee.a(ee_rq_exchg.o)
+ .debug_str     0x0000265a       0x76 libee.a(ee_rq_exchg.o)
                                 0x422 (size before relaxing)
- .debug_str     0x0000248c      0x175 libee.a(ee_alsetrel.o)
+ .debug_str     0x000026d0      0x175 libee.a(ee_alsetrel.o)
                                 0x557 (size before relaxing)
- .debug_str     0x00002601      0x203 libee.a(ee_altick.o)
+ .debug_str     0x00002845      0x203 libee.a(ee_altick.o)
                                 0x800 (size before relaxing)
- .debug_str     0x00002804       0x82 libee.a(ee_context.o)
+ .debug_str     0x00002a48       0x82 libee.a(ee_context.o)
                                 0x429 (size before relaxing)
- .debug_str     0x00002886       0x8c libee.a(ee_tnterm.o)
+ .debug_str     0x00002aca       0x8c libee.a(ee_tnterm.o)
                                 0x465 (size before relaxing)
- .debug_str     0x00002912       0x70 libee.a(ee_rq_inser.o)
+ .debug_str     0x00002b56       0x70 libee.a(ee_rq_inser.o)
                                 0x41c (size before relaxing)
- .debug_str     0x00002982       0x89 libee.a(ee_context.o)
+ .debug_str     0x00002bc6       0x89 libee.a(ee_context.o)
                                 0x471 (size before relaxing)
- .debug_str     0x00002a0b       0xbf libee.a(ee_thendin.o)
+ .debug_str     0x00002c4f       0xbf libee.a(ee_thendin.o)
                                 0x655 (size before relaxing)
- .debug_str     0x00002aca      0x2b3 libstm32f4xxspd.a(stm32f4xx_dma.o)
+ .debug_str     0x00002d0e      0x2b3 libstm32f4xxspd.a(stm32f4xx_dma.o)
                                 0x577 (size before relaxing)
- .debug_str     0x00002d7d      0x42c libstm32f4xxspd.a(stm32f4xx_fsmc.o)
+ .debug_str     0x00002fc1      0x42c libstm32f4xxspd.a(stm32f4xx_fsmc.o)
                                 0x7bf (size before relaxing)
- .debug_str     0x000031a9      0x1d2 libstm32f4xxspd.a(stm32f4xx_gpio.o)
+ .debug_str     0x000033ed      0x1d2 libstm32f4xxspd.a(stm32f4xx_gpio.o)
                                 0x4d8 (size before relaxing)
- .debug_str     0x0000337b      0x3e1 libstm32f4xxspd.a(stm32f4xx_i2c.o)
+ .debug_str     0x000035bf      0x3e1 libstm32f4xxspd.a(stm32f4xx_i2c.o)
                                 0x69a (size before relaxing)
- .debug_str     0x0000375c      0x531 libstm32f4xxspd.a(stm32f4xx_rcc.o)
+ .debug_str     0x000039a0      0x531 libstm32f4xxspd.a(stm32f4xx_rcc.o)
                                 0x885 (size before relaxing)
 
 .debug_frame    0x00000000     0x2ca0

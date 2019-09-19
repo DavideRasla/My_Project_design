@@ -292,7 +292,7 @@ int main(void)
 	 * and after that periodically
 	 * */
 	SetRelAlarm(AlarmTaskLCD, 10, 50);
-	SetRelAlarm(AlarmTaskClock, 10, 100);
+	SetRelAlarm(AlarmTaskClock, 10, 75);
 
   /* Forever loop: background activities (if any) should go here */
 	for (;;) {

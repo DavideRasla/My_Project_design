@@ -3,7 +3,7 @@
 @REM   If you want modify this file, you should move it to a safe folder,
 @REM   like the project's root, and update the path inside the project 
 @REM   properties "C/C++ Make Project" -> "Build command"
-@REM   i.e.   ${workspace_loc:Zini}/make_launcher.bat
+@REM   i.e.   ${workspace_loc:swatch4}/make_launcher.bat
 
 @REM   Unset CWD and PWD. They may cause cygwin warning.
 @set CWD=
